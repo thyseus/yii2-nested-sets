@@ -61,7 +61,7 @@ class Menu extends \yii\db\ActiveRecord
     public function behaviors() {
         return [
             'tree' => [
-                'class' => NestedSetsBehavior::className(),
+                'class' => NestedSetsBehavior::class,
                 // 'treeAttribute' => 'tree',
                 // 'leftAttribute' => 'lft',
                 // 'rightAttribute' => 'rgt',
@@ -95,7 +95,7 @@ class MenuQuery extends \yii\db\ActiveQuery
 {
     public function behaviors() {
         return [
-            NestedSetsQueryBehavior::className(),
+            NestedSetsQueryBehavior::class,
         ];
     }
 }
